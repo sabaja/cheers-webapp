@@ -3,6 +3,15 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+.mvn/
+.metadata/
+/.factorypath
+*.settings
+*.springBeans
+*.class
+*.log
+*.project
+/db
 
 ### STS ###
 .apt_generated
