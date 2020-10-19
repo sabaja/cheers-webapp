@@ -1,13 +1,13 @@
-package com.cheers;
+package com.greetings;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CheersWebappApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CheersWebappApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
