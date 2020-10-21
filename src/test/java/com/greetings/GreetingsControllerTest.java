@@ -29,7 +29,7 @@ public class GreetingsControllerTest {
 
     @Test
     @SneakyThrows
-    public void callRegardsController_shouldExecute() {
+    public void callGreetingsController_shouldExecute() {
         mvc.perform(get(REQUEST_URL)
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
                 .requestAttr("accept", "application/jason")
@@ -41,7 +41,7 @@ public class GreetingsControllerTest {
 
     @Test
     @SneakyThrows
-    public void callRegardsControllerWithUserId_shouldExecute() {
+    public void callGreetingsControllerWithUserId_shouldExecute() {
         mvc.perform(get(REQUEST_URL + File.separator + USER_ID_PARAM)
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
                 .requestAttr("accept", "application/jason")

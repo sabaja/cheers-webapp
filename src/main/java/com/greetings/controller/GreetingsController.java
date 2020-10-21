@@ -26,7 +26,11 @@ public class GreetingsController {
     }
 
     @GetMapping("/greetings/test/{userId}")
-    public ResponseEntity<String> getGreetingsWithUserId(@PathVariable(name = "userId") String userId) {
+    public ResponseEntity<String> getGreetingsWithUserId(@PathVariable(name = "userId") String userId) throws RuntimeException {
+        if (userId.equals("Jacopo")) {
+            throw new RuntimeException(String.format("%s user is unable to access", userId));
+        }
+
         String response = StringUtils.isEmpty(userId) ? RESPONSE : RESPONSE + " " + userId;
         return ResponseEntity.ok(gson.toJson(response));
     }
